@@ -41,12 +41,15 @@ Open Server Manager, select Add roles and features, and install Active Directory
 <h3> 2️⃣ Promote DC to a Domain Controller </h3>
 
 This establishes the server as the central point for managing users, devices, and security within the network.
-<img width="300" alt="9" src="https://github.com/user-attachments/assets/dfb0af6e-65a0-4ac9-b0ab-2f6d18ed5be1" />
 
+<img width="300" alt="9" src="https://github.com/user-attachments/assets/dfb0af6e-65a0-4ac9-b0ab-2f6d18ed5be1" /> 
+</p>
 Create a new forest using a domain name like mydomain.com.
-
-An Active Directory forest is the highest level of organization within Active Directory.
-
+</p>
+An Active Directory forest is the highest level of organization within Active Directory. Creating a new forest sets up a completely separate Active Directory environment with its own domain structure and security boundaries. It serves as the overall framework for managing all network resources and identities within an organization.
+</p>
+When asked for the Directory Services Restore Mode (DSRM) password, just set it to Password1 and continue.
+</p>
 <img width="412" alt="10" src="https://github.com/user-attachments/assets/ebc1ef31-840b-466d-8d1d-57ad9e166d96" />
 <img width="412" alt="11" src="https://github.com/user-attachments/assets/adfc3826-1a44-4fe3-a33e-cf9b47046d4a" />
 <img width="412" alt="12" src="https://github.com/user-attachments/assets/26be85a2-0f07-4be3-96f1-8a29aaed8ea3" />
@@ -55,51 +58,10 @@ An Active Directory forest is the highest level of organization within Active Di
 <img width="412" alt="15" src="https://github.com/user-attachments/assets/7623a080-1762-4959-b1f0-71ea747c84c2" />
 <img width="412" alt="16" src="https://github.com/user-attachments/assets/959da2e1-81ab-4a55-877c-da306671a961" />
 
+<h3> 3️⃣ Allow server to restart and log back into DC using the domain format: mydomain.com\username </h3>
 
+This confirms the server is now part of the new domain.
 
+<img width="809" alt="17" src="https://github.com/user-attachments/assets/7f1b5078-0c5d-42db-9bed-dd7593a9ab3b" />
+<img width="809" alt="RDC-domain-dc-1" src="https://github.com/user-attachments/assets/9d25ae70-3f49-4a64-bf67-a3e1f107ae48" />
 
-<h3> 3️⃣ Allow server to restart and log back into DC using the domain format: mydomain.com/username
-<img width="801" alt="azure" src="https://github.com/user-attachments/assets/f81c6800-45ef-4c8d-be3c-1f2bde5a0e9c" />
-
-<img width="539" alt="resourcegroup" src="https://github.com/user-attachments/assets/fe39fb40-c24b-4cd9-898c-d6225b75d3cd" />
-
-<img width="557" alt="vnet" src="https://github.com/user-attachments/assets/23e03380-e422-4080-85b6-0c52e51fc28f" />
-
-<img width="457" alt="dc-1" src="https://github.com/user-attachments/assets/b60ef10f-8580-45a2-ad27-1d0e797c7ff8" />
-
-<img width="454" alt="client-1" src="https://github.com/user-attachments/assets/ccb69a2a-feaa-498b-85ab-29d5cd941232" />
-
-<img width="475" alt="vmsize,password,licensing" src="https://github.com/user-attachments/assets/d5637f58-db61-47a7-adc8-29ce88bf8d13" />
-</p>
-<img width="622" alt="dc-1static" src="https://github.com/user-attachments/assets/f5c7c345-c953-45e0-9470-95ac16c70518" />
-
-<img width="530" alt="client-1dnsserver" src="https://github.com/user-attachments/assets/4b613a8d-545f-480e-92b2-9780598352fd" />
-
-<img width="818" alt="client-1restart" src="https://github.com/user-attachments/assets/affe18e4-5e96-4acb-8801-271db9f81adc" />
-
-<img width="807" alt="RDC-dc-1" src="https://github.com/user-attachments/assets/3ae1e24f-31ff-4da4-a332-04beb9d23077" />
-
-<img width="782" alt="firewalloff" src="https://github.com/user-attachments/assets/845b2379-607c-4c8d-adb1-f07b661de9ce" />
-
-<img width="806" alt="RDC-client-1" src="https://github.com/user-attachments/assets/1d221b42-b5d9-4b76-bfcf-542027fcd485" />
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
