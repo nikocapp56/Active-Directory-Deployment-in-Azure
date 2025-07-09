@@ -84,10 +84,15 @@ Inside _ADMINS, create a new user: jane_admin
 <img width="863" alt="22" src="https://github.com/user-attachments/assets/fba41636-b9e7-4b03-9a4b-bf3bb3a261e7" />
 <img width="400" alt="22 5" src="https://github.com/user-attachments/assets/c281984e-8369-4d4f-b2b2-62dae4195b3a" />
 <img width="400" alt="23" src="https://github.com/user-attachments/assets/3f42a5a5-0dcf-454f-af07-5c8feac993ef" />
-
+</p>
+Add jane_admin to the “Domain Admins” Security Group.
+</p>
+This makes it so that she has full administrative privileges across the domain.
+</p>
 <img width="442" alt="24" src="https://github.com/user-attachments/assets/4175f30d-fe5b-420f-9608-8a14a17db06c" />
-<img width="252" alt="25" src="https://github.com/user-attachments/assets/d90d3b33-86cf-40f8-a6c2-dcd55291d015" />
-<img width="283" alt="26" src="https://github.com/user-attachments/assets/9f409b02-e451-4153-897f-f6dd08e68091" />
-<img width="283" alt="27" src="https://github.com/user-attachments/assets/5551defc-4f4b-4925-a85a-5b52fdec642f" />
-<img width="147" alt="28" src="https://github.com/user-attachments/assets/045e4c36-07a4-4ebc-900e-fc1895357160" />
+<img width="315" alt="25" src="https://github.com/user-attachments/assets/d90d3b33-86cf-40f8-a6c2-dcd55291d015" />
+<img width="400" alt="26" src="https://github.com/user-attachments/assets/9f409b02-e451-4153-897f-f6dd08e68091" />
+<img width="400" alt="27" src="https://github.com/user-attachments/assets/5551defc-4f4b-4925-a85a-5b52fdec642f" />
+<img width="338" alt="28" src="https://github.com/user-attachments/assets/55f3e25c-7529-443c-99fa-c979d87fc8d0" />
 
+<h3> 5️⃣ Create Organizational Units and a Domain Admin user </h3>
