@@ -30,13 +30,13 @@ Open Remote Desktop Connection and log into DC.
 
 Open Server Manager, select Add roles and features, and install Active Directory Domain Services (AD DS).
 <img width="1156" alt="1servermanager" src="https://github.com/user-attachments/assets/f40d227a-e1af-4254-b512-59b87ac18369" />
-<img width="413" alt="2" src="https://github.com/user-attachments/assets/11cde674-9bda-4277-8de3-c83b9d18ecce" />
-<img width="413" alt="3" src="https://github.com/user-attachments/assets/373aa58c-923b-4f3e-a5dc-5cb80542e85b" />
-<img width="500" alt="4" src="https://github.com/user-attachments/assets/43b290b9-0a59-4416-b013-32f1265712cf" />
-<img width="500" alt="5" src="https://github.com/user-attachments/assets/2016f373-7a5c-46e6-a9c0-2466fa6825f1" />
-<img width="500" alt="6" src="https://github.com/user-attachments/assets/da3e04c2-92a5-4bfa-b366-0fbb4fff5764" />
-<img width="500" alt="7" src="https://github.com/user-attachments/assets/b9b3403c-3881-4988-87b4-7754af1aec60" />
-<img width="500" alt="8" src="https://github.com/user-attachments/assets/49132580-e72c-4365-b7db-66b133cfafbb" />
+<img width="412" alt="2" src="https://github.com/user-attachments/assets/11cde674-9bda-4277-8de3-c83b9d18ecce" />
+<img width="412" alt="3" src="https://github.com/user-attachments/assets/373aa58c-923b-4f3e-a5dc-5cb80542e85b" />
+<img width="412" alt="4" src="https://github.com/user-attachments/assets/43b290b9-0a59-4416-b013-32f1265712cf" />
+<img width="412" alt="5" src="https://github.com/user-attachments/assets/2016f373-7a5c-46e6-a9c0-2466fa6825f1" />
+<img width="412" alt="6" src="https://github.com/user-attachments/assets/da3e04c2-92a5-4bfa-b366-0fbb4fff5764" />
+<img width="412" alt="7" src="https://github.com/user-attachments/assets/b9b3403c-3881-4988-87b4-7754af1aec60" />
+<img width="412" alt="8" src="https://github.com/user-attachments/assets/49132580-e72c-4365-b7db-66b133cfafbb" />
 
 <h3> 2️⃣ Promote DC to a Domain Controller </h3>
 
@@ -47,13 +47,13 @@ Create a new forest using a domain name like mydomain.com.
 
 An Active Directory forest is the highest level of organization within Active Directory.
 
-<img width="500" alt="10" src="https://github.com/user-attachments/assets/ebc1ef31-840b-466d-8d1d-57ad9e166d96" />
-<img width="500" alt="11" src="https://github.com/user-attachments/assets/adfc3826-1a44-4fe3-a33e-cf9b47046d4a" />
-<img width="500" alt="12" src="https://github.com/user-attachments/assets/26be85a2-0f07-4be3-96f1-8a29aaed8ea3" />
-<img width="500" alt="13" src="https://github.com/user-attachments/assets/ad70bbca-c61c-41ef-ad7f-ee11c61ee04e" />
-<img width="500" alt="14" src="https://github.com/user-attachments/assets/4b9c4a85-f63d-4cd5-a330-e7f20b20956e" />
-<img width="500" alt="15" src="https://github.com/user-attachments/assets/7623a080-1762-4959-b1f0-71ea747c84c2" />
-<img width="500" alt="16" src="https://github.com/user-attachments/assets/959da2e1-81ab-4a55-877c-da306671a961" />
+<img width="412" alt="10" src="https://github.com/user-attachments/assets/ebc1ef31-840b-466d-8d1d-57ad9e166d96" />
+<img width="412" alt="11" src="https://github.com/user-attachments/assets/adfc3826-1a44-4fe3-a33e-cf9b47046d4a" />
+<img width="412" alt="12" src="https://github.com/user-attachments/assets/26be85a2-0f07-4be3-96f1-8a29aaed8ea3" />
+<img width="412" alt="13" src="https://github.com/user-attachments/assets/ad70bbca-c61c-41ef-ad7f-ee11c61ee04e" />
+<img width="412" alt="14" src="https://github.com/user-attachments/assets/4b9c4a85-f63d-4cd5-a330-e7f20b20956e" />
+<img width="412" alt="15" src="https://github.com/user-attachments/assets/7623a080-1762-4959-b1f0-71ea747c84c2" />
+<img width="412" alt="16" src="https://github.com/user-attachments/assets/959da2e1-81ab-4a55-877c-da306671a961" />
 
 
 
