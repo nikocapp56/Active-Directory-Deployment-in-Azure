@@ -87,7 +87,7 @@ Inside _ADMINS, create a new user: jane_admin
 </p>
 Add jane_admin to the “Domain Admins” Security Group.
 </p>
-This makes it so that she has full administrative privileges across the domain.
+This makes it so that Jane has full administrative privileges across the domain.
 </p>
 <img width="442" alt="24" src="https://github.com/user-attachments/assets/4175f30d-fe5b-420f-9608-8a14a17db06c" />
 <img width="315" alt="25" src="https://github.com/user-attachments/assets/d90d3b33-86cf-40f8-a6c2-dcd55291d015" />
@@ -95,4 +95,31 @@ This makes it so that she has full administrative privileges across the domain.
 <img width="400" alt="27" src="https://github.com/user-attachments/assets/5551defc-4f4b-4925-a85a-5b52fdec642f" />
 <img width="338" alt="28" src="https://github.com/user-attachments/assets/55f3e25c-7529-443c-99fa-c979d87fc8d0" />
 
-<h3> 5️⃣ Create Organizational Units and a Domain Admin user </h3>
+Log out of DC.
+
+<h3> 5️⃣ Join Client to the domain </h3>
+
+Log into Client as the local user
+
+<img width="806" alt="RDC-client-1" src="https://github.com/user-attachments/assets/1ec7227c-01b7-4774-9c02-4436f44c8f64" />
+</p>
+Go to System Settings -> About -> Rename this PC (Advanced)
+</p>
+<img width="548" alt="29" src="https://github.com/user-attachments/assets/562fb705-627c-4c94-804e-38b18890a7bf" />
+</p>
+Join the computer to the domain mydomain.com
+</p>
+<img width="400" alt="30" src="https://github.com/user-attachments/assets/e4327dd6-4ba4-48b2-8603-5ff3b51056d1" />
+<img width="260" alt="31" src="https://github.com/user-attachments/assets/728a557e-c57e-4322-bfcb-5fb89aef0824" />
+</p>
+Use jane_admin login credentials to join the domain.
+</p>
+Restart when prompted.
+</p>
+<img width="300" alt="32" src="https://github.com/user-attachments/assets/a9faff12-7bc7-4886-b5cb-4201638ef89f" />
+<img width="250" alt="33" src="https://github.com/user-attachments/assets/b0e6c77f-4fb9-46f4-b24f-e640f70328d8" />
+<img width="250" alt="34" src="https://github.com/user-attachments/assets/2398a75c-a83f-49c4-9d96-29cc4aa48c54" />
+
+
+
+Log into DC as mydomain.com\jane_admin
