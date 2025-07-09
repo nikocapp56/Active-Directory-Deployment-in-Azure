@@ -65,3 +65,22 @@ This confirms the server is now part of the new domain.
 <img width="809" alt="17" src="https://github.com/user-attachments/assets/7f1b5078-0c5d-42db-9bed-dd7593a9ab3b" />
 <img width="809" alt="RDC-domain-dc-1" src="https://github.com/user-attachments/assets/9d25ae70-3f49-4a64-bf67-a3e1f107ae48" />
 
+<h3> 4️⃣ Create Organizational Units and a Domain Admin user </h3>
+
+Open Active Directory Users and Computers (ADUC).
+
+<img width="298" alt="18" src="https://github.com/user-attachments/assets/405b2cc0-7868-434e-b845-58c6a6923c47" />
+
+Within the domain,
+  - Create an Organizational Unit named _EMPLOYEES.
+  - Create an Organizational Unit named _ADMINS.
+
+<img width="660" alt="19" src="https://github.com/user-attachments/assets/04d05457-82e1-4260-a97c-de0076f32194" />
+<img width="394" alt="20" src="https://github.com/user-attachments/assets/b6b2bf23-930c-473a-8a14-a86a5478575e" />
+<img width="392" alt="21" src="https://github.com/user-attachments/assets/bc707d9b-f2b1-4b34-8646-80ac7a94cf4b" />
+</p>
+Inside _ADMINS, create a new user:
+
+<img width="863" alt="22" src="https://github.com/user-attachments/assets/fba41636-b9e7-4b03-9a4b-bf3bb3a261e7" />
+For easy testing 
+<img width="392" alt="23" src="https://github.com/user-attachments/assets/3f42a5a5-0dcf-454f-af07-5c8feac993ef" />
