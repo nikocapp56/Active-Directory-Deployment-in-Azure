@@ -18,10 +18,25 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Windows Server 2022 Datacenter: Azure Edition - x64 Gen2
 - Windows 10 Pro, version 22H2 - x64 Gen2
 
-![alt text](vms.png)
-
 <h2>Deployment and Configuration Steps</h2>
 
+<h3> 0️⃣ Overview of AD Deployment </h3>
+
+
+<h3> 1️⃣ Install Active Directory Domain Services </h3>
+
+Open Remote Desktop Connection.
+
+Enter DC’s public IP address and log in.
+
+Open Server Manager, select Add roles and features, and install Active Directory Domain Services (AD DS).
+
+<h3> 2️⃣ Promote this server to a Domain Controller: Create a new forest using a domain name like mydomain.com.</h3>
+
+An Active Directory forest is the highest level of organization within Active Directory.
+
+
+<h3> 3️⃣ Allow server to restart and log back into DC using the domain format: mydomain.com/username
 <img width="801" alt="azure" src="https://github.com/user-attachments/assets/f81c6800-45ef-4c8d-be3c-1f2bde5a0e9c" />
 
 <img width="539" alt="resourcegroup" src="https://github.com/user-attachments/assets/fe39fb40-c24b-4cd9-898c-d6225b75d3cd" />
