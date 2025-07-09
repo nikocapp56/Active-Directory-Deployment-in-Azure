@@ -63,7 +63,7 @@ When asked for the Directory Services Restore Mode (DSRM) password, just set it 
 This confirms the server is now part of the new domain.
 
 <img width="809" alt="17" src="https://github.com/user-attachments/assets/7f1b5078-0c5d-42db-9bed-dd7593a9ab3b" />
-<img width="809" alt="RDC-domain-dc-1" src="https://github.com/user-attachments/assets/9d25ae70-3f49-4a64-bf67-a3e1f107ae48" />
+<img width="809" alt="RDC-domain-dc-1" src="https://github.com/user-attachments/assets/70e87bdf-659e-4a2e-bd72-63ac2c5d9edb" />
 
 <h3> 4️⃣ Create Organizational Units and a Domain Admin user </h3>
 
@@ -120,6 +120,19 @@ Restart when prompted.
 <img width="250" alt="33" src="https://github.com/user-attachments/assets/b0e6c77f-4fb9-46f4-b24f-e640f70328d8" />
 <img width="250" alt="34" src="https://github.com/user-attachments/assets/2398a75c-a83f-49c4-9d96-29cc4aa48c54" />
 
+<h3> 6️⃣ Verify that Client shows up in Active Directory Users and Computers </h3>
 
+Log back into DC as mydomain.com\jane_admin
 
-Log into DC as mydomain.com\jane_admin
+<img width="806" alt="RDC-jane-domain-dc-1" src="https://github.com/user-attachments/assets/1c1b7d3d-3db9-4703-8055-8f35969393ad" />
+
+Open Active Directory Users and Computers.
+
+<img width="298" alt="18" src="https://github.com/user-attachments/assets/f6b7275d-36ff-4d63-b6ea-544575f2f99a" />
+
+Within the domain, create an Organizational Unit named _CLIENTS and drag Client into it.
+
+<img width="397" alt="35" src="https://github.com/user-attachments/assets/e57a3f7b-a6e6-4016-a19a-d5d366d4c290" />
+<img width="370" alt="36" src="https://github.com/user-attachments/assets/ad8f1769-47ac-48cf-be74-e27d3fb496dc" />
+<img width="750" alt="37" src="https://github.com/user-attachments/assets/2c9a56b2-2ea8-4ed4-8ea2-df479e3fed01" />
+
