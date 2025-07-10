@@ -4,7 +4,7 @@
 </p>
 
 <h1>Active Directory Deployment in Azure</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+This project demonstrates how to build a complete Active Directory infrastructure in Microsoft Azure, replicating an on-premises environment entirely in the cloud. By leveraging Azure virtual machines, we deploy and configure Active Directory Domain Services to establish centralized management of users, devices, and security. The setup highlights how to organize network resources with Organizational Units, enforce domain-level authentication, and support large-scale deployments by automating the creation of thousands of user accounts via Powershell. This showcases the ease and flexibility of running enterprise-grade directory services in a fully virtualized Azure environment.
 
 <h2>Environments and Technologies Used</h2>
 
@@ -22,6 +22,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3> 0️⃣ Overview of AD Deployment </h3>
 
+In this walkthrough, we will:
+- Install Active Directory Domain Services.
+- Promote the DC VM to a Domain Controller, creating a new forest (mydomain.com) that becomes the main authority for controlling user accounts, authentication, and access to network resources.
+- Create Organizational Units (_EMPLOYEES, _ADMINS, _CLIENTS) and a domain admin user to organize and control our directory environment.
+- Join the Windows 10 client VM to the domain, connecting it to our new Active Directory infrastructure.
+- Configure Remote Desktop to allow standard domain user access.
+- Use a PowerShell script to generate thousands of employee accounts, then test by logging into the client as one of these users to verify domain authentication.
 
 <h3> 1️⃣ Install Active Directory Domain Services </h3>
 
@@ -40,7 +47,7 @@ Open Server Manager, select Add roles and features, and install Active Directory
 
 <h3> 2️⃣ Promote DC to a Domain Controller </h3>
 
-This establishes the server as the central point for managing users, devices, and security within the network.
+This establishes the server as the central point for managing user accounts, security policies, and authentication across the domain.
 
 <img width="300" alt="9" src="https://github.com/user-attachments/assets/dfb0af6e-65a0-4ac9-b0ab-2f6d18ed5be1" /> 
 </p>
@@ -122,7 +129,7 @@ Restart when prompted.
 
 <h3> 6️⃣ Verify that Client shows up in Active Directory Users and Computers </h3>
 
-Log back into DC as mydomain.com\jane_admin
+Log back into DC as mydomain.com\jane_admin. Use this admin account for all domain administration going forward.
 
 <img width="806" alt="RDC-jane-domain-dc-1" src="https://github.com/user-attachments/assets/1c1b7d3d-3db9-4703-8055-8f35969393ad" />
 
@@ -136,3 +143,41 @@ Within the domain, create an Organizational Unit named _CLIENTS and drag Client 
 <img width="370" alt="36" src="https://github.com/user-attachments/assets/ad8f1769-47ac-48cf-be74-e27d3fb496dc" />
 <img width="750" alt="37" src="https://github.com/user-attachments/assets/2c9a56b2-2ea8-4ed4-8ea2-df479e3fed01" />
 
+<h3> 7️⃣ Allow domain users to access remote desktop on Client </h3>
+
+Log into Cient as mydomain.com\jane_admin
+
+<img width="802" alt="RDC-jane-domain-client-1" src="https://github.com/user-attachments/assets/8beab503-d497-48d5-96d4-46f4c3f61d1a" />
+</p>
+Go to System Settings -> About -> Remote Desktop
+</p>
+<img width="550" alt="38" src="https://github.com/user-attachments/assets/cf7ba50a-060a-42bd-b160-5c981d8d1cae" />
+<img width="307" alt="39" src="https://github.com/user-attachments/assets/d474bc13-1c0b-4d9d-b3f4-a92a79430f80" />
+<img width="300" alt="40" src="https://github.com/user-attachments/assets/c1cb0abb-fe2c-471f-88d9-7c688751e352" />
+<img width="400" alt="41" src="https://github.com/user-attachments/assets/2b94735d-6e47-42a4-a77d-224e941f0883" />
+<img width="300" alt="42" src="https://github.com/user-attachments/assets/f73a9bb4-f535-4c52-ac4e-c8ff0796e761" />
+
+This ensures standard domain users can sign in via Remote Desktop.
+
+Log out of Client.
+
+<h3> 8️⃣ Create additional employee users and test logging into Client with one of the users </h3>
+
+Run PowerShell ISE as an administrator.
+
+<img width="148" alt="43" src="https://github.com/user-attachments/assets/c68f8fdf-61f0-4b85-8845-101eddafacab" />
+
+### [User Creation Script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) 
+This script will create 10,000 employee user accounts and store them in the _EMPLOYEES Organizational Unitin Active Directory Users and Computers.
+
+Create a new file in PowerShell ISE, then paste the contents of the user creation script into it.
+
+Run the script and observe the accounts in the appropriate Organizational Unit (_EMPLOYEES).
+
+<img width="829" alt="44" src="https://github.com/user-attachments/assets/40adb1d1-9f06-45d1-9557-ffad9173ff1b" />
+<img width="1138" alt="45" src="https://github.com/user-attachments/assets/89746e6f-8134-4ae9-a70d-8d41657dfdd1" />
+
+Return to Client and attempt to log in as one of the newly created users using the password you set before Password1.
+Verify that login succeeds, demonstrating that domain authentication is working properly.
+
+<img width="805" alt="RDC-cip dep-domain-client-1" src="https://github.com/user-attachments/assets/3652e674-6e04-4c6a-98de-ea3198524e54" />
