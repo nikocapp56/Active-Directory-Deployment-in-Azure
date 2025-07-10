@@ -177,7 +177,7 @@ Run the script and observe the accounts in the appropriate Organizational Unit (
 <img width="829" alt="44" src="https://github.com/user-attachments/assets/40adb1d1-9f06-45d1-9557-ffad9173ff1b" />
 <img width="1138" alt="45" src="https://github.com/user-attachments/assets/89746e6f-8134-4ae9-a70d-8d41657dfdd1" />
 
-Return to Client and attempt to log in as one of the newly created users using the password you set before Password1.
+Return to Client and attempt to log in as one of the newly created users using the password you set before (Password1).
 Verify that login succeeds, demonstrating that domain authentication is working properly.
 
 <img width="805" alt="RDC-cip dep-domain-client-1" src="https://github.com/user-attachments/assets/3652e674-6e04-4c6a-98de-ea3198524e54" />
