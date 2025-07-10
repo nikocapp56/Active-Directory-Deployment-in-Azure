@@ -20,7 +20,7 @@ This project demonstrates how to build a complete Active Directory infrastructur
 
 <h2>Deployment and Configuration Steps</h2>
 
-<h3> 0️⃣ Overview of AD Deployment </h3>
+<h3> 0️⃣ Overview of Active Directory Deployment </h3>
 
 In this walkthrough, we will:
 - Install Active Directory Domain Services.
