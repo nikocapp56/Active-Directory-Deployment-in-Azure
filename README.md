@@ -4,7 +4,7 @@
 </p>
 
 <h1>Active Directory Deployment in Azure</h1>
-This project demonstrates how to build a complete Active Directory infrastructure in Microsoft Azure, replicating an on-premises environment entirely in the cloud. By leveraging Azure virtual machines, we deploy and configure Active Directory Domain Services to establish centralized management of users, devices, and security. The setup highlights how to organize network resources with Organizational Units, enforce domain-level authentication, and support large-scale deployments by automating the creation of thousands of user accounts via Powershell. This showcases the ease and flexibility of running enterprise-grade directory services in a fully virtualized Azure environment.
+This project demonstrates how to build a complete Active Directory infrastructure in Microsoft Azure, replicating an on-premises environment entirely in the cloud. By leveraging Azure virtual machines, Active Directory Domain Services is deployed and configured to establish centralized management of users, devices, and security. The setup highlights how to organize network resources with Organizational Units, enforce domain-level authentication, and support large-scale deployments by automating the creation of thousands of user accounts via Powershell. This showcases the ease and flexibility of running enterprise-grade directory services in a fully virtualized Azure environment.
 
 <h2>Environments and Technologies Used</h2>
 
