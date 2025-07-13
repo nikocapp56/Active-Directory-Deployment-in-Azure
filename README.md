@@ -18,7 +18,7 @@ This project demonstrates how to build a complete Active Directory infrastructur
 - Windows Server 2022 Datacenter: Azure Edition - x64 Gen2
 - Windows 10 Pro, version 22H2 - x64 Gen2
 
-<h2> Prerequisites </h2>
+<h2> Prerequisite </h2>
 
   - [Active Directory Infrastructure Setup in Azure](https://github.com/nikocapp56/Active-Directory-Infrastructure-Setup-in-Azure)
  
