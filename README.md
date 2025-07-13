@@ -157,9 +157,9 @@ Go to System Settings -> About -> Remote Desktop
 </p>
 <img width="550" alt="38" src="https://github.com/user-attachments/assets/cf7ba50a-060a-42bd-b160-5c981d8d1cae" />
 <img width="307" alt="39" src="https://github.com/user-attachments/assets/d474bc13-1c0b-4d9d-b3f4-a92a79430f80" />
-<img width="300" alt="40" src="https://github.com/user-attachments/assets/c1cb0abb-fe2c-471f-88d9-7c688751e352" />
-<img width="400" alt="41" src="https://github.com/user-attachments/assets/2b94735d-6e47-42a4-a77d-224e941f0883" />
-<img width="300" alt="42" src="https://github.com/user-attachments/assets/f73a9bb4-f535-4c52-ac4e-c8ff0796e761" />
+<img width="400" alt="40" src="https://github.com/user-attachments/assets/c1cb0abb-fe2c-471f-88d9-7c688751e352" />
+<img width="450" alt="41" src="https://github.com/user-attachments/assets/2b94735d-6e47-42a4-a77d-224e941f0883" />
+<img width="400" alt="42" src="https://github.com/user-attachments/assets/f73a9bb4-f535-4c52-ac4e-c8ff0796e761" />
 
 This ensures standard domain users can sign in via Remote Desktop.
 
@@ -169,7 +169,7 @@ Log out of Client.
 
 Run PowerShell ISE as an administrator.
 
-<img width="148" alt="43" src="https://github.com/user-attachments/assets/c68f8fdf-61f0-4b85-8845-101eddafacab" />
+<img width="400" alt="43" src="https://github.com/user-attachments/assets/c68f8fdf-61f0-4b85-8845-101eddafacab" />
 
 ### [User Creation Script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) 
 This script will create 10,000 employee user accounts and store them in the _EMPLOYEES Organizational Unitin Active Directory Users and Computers.
@@ -178,7 +178,7 @@ Create a new file in PowerShell ISE, then paste the contents of the user creatio
 
 Run the script and observe the accounts in the appropriate Organizational Unit (_EMPLOYEES).
 
-<img width="829" alt="44" src="https://github.com/user-attachments/assets/40adb1d1-9f06-45d1-9557-ffad9173ff1b" />
+<img width="1000" alt="44" src="https://github.com/user-attachments/assets/40adb1d1-9f06-45d1-9557-ffad9173ff1b" />
 <img width="1138" alt="45" src="https://github.com/user-attachments/assets/89746e6f-8134-4ae9-a70d-8d41657dfdd1" />
 
 Return to Client and attempt to log in as one of the newly created users using the password you set before (Password1).
