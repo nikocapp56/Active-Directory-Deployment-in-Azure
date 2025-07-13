@@ -29,8 +29,8 @@ This project demonstrates how to build a complete Active Directory infrastructur
 In this walkthrough, we will:
 - Install Active Directory Domain Services.
 - Promote the DC VM to a Domain Controller, creating a new forest (mydomain.com) that becomes the main authority for controlling user accounts, authentication, and access to network resources.
-- Create Organizational Units (_EMPLOYEES, _ADMINS, _CLIENTS) and a domain admin user to organize and control our directory environment.
-- Join the Windows 10 client VM to the domain, connecting it to our new Active Directory infrastructure.
+- Create Organizational Units (_EMPLOYEES, _ADMINS, _CLIENTS) and a domain admin user to organize and control the directory environment.
+- Join the Windows 10 client VM to the domain, connecting it to the new Active Directory infrastructure.
 - Configure Remote Desktop to allow standard domain user access.
 - Use a PowerShell script to generate thousands of employee accounts, then test by logging into the client as one of these users to verify domain authentication.
 
