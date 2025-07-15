@@ -34,6 +34,8 @@ In this walkthrough, we will:
 - Configure Remote Desktop to allow standard domain user access.
 - Use a PowerShell script to generate thousands of employee accounts, then test by logging into the client as one of these users to verify domain authentication.
 
+<img width="600" height="858" alt="image" src="https://github.com/user-attachments/assets/7868aa04-dd13-4c4f-97e1-402a91b826fd" />
+
 <h3> 1️⃣ Install Active Directory Domain Services </h3>
 
 Open Remote Desktop Connection and log into DC.
